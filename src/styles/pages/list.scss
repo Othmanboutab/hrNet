@@ -1,0 +1,12 @@
+.list-container{
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    h1{
+        font-size: 20px;
+        font-weight: bold;
+    }
+}

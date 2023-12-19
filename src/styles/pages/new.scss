@@ -1,0 +1,63 @@
+@import "../variables/variables";
+
+.new-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 40px;
+  @media only screen and (max-width: $mobile-width) {
+    margin-block: 20px;
+  }
+  .link {
+    font-size: 26px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .address {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+
+      @media only screen and (max-width: $mobile-width) {
+        flex-direction: column;
+      }
+    }
+
+    .input-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      input,
+      select {
+        height: 40px;
+        padding: 0 10px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+    }
+  }
+
+  .save-button {
+    border: none;
+    color: black;
+    background-color: #31b1e5;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+}
